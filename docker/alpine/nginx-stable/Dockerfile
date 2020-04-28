@@ -6,7 +6,7 @@ ARG ALPINE_VERSION=latest
 FROM alpine:$ALPINE_VERSION as pagespeed
 
 # Check https://github.com/apache/incubator-pagespeed-mod/tags
-ARG MOD_PAGESPEED_TAG=master
+ARG MOD_PAGESPEED_TAG=v1.14.36.1
 
 RUN apk add --no-cache \
         apache2-dev \
